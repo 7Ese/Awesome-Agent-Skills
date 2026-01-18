@@ -10,77 +10,77 @@
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![MCP Ready](https://img.shields.io/badge/MCP-Ready-22c55e)](https://modelcontextprotocol.io/)
 
-**收录精选的 AI Agent Skills (Claude, OpenAI) 与 MCP Servers 资源导航站。**
+**A curated navigation station for AI Agent Skills (Claude, OpenAI) & MCP Servers.**
 
-[在线预览](https://awesome-agent-skills.vercel.app/) · [提交 Skill](../../issues/new?template=submit-skill.yml) · [IDE 配置指南](./IDE_SETUP.md)
+[Preview Live](https://awesome-agent-skills.vercel.app/) · [Submit Skill](../../issues/new?template=submit-skill.yml) · [IDE Setup Guide](./IDE_SETUP.md) · [简体中文](./README_ZH.md)
 
 </div>
 
 ---
 
-## 📖 简介 / Introduction
+## 📖 Introduction
 
-**Awesome Agent Skills** 是一个为 AI Agent 开发者和重度用户打造的技能导航站。随着 [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) 的发布，Agent 的能力边界被无限扩展。本项目旨在整理和分类最实用的 Agent 技能，帮助你快速武装你的 AI 助手。
+**Awesome Agent Skills** is a curated navigation station designed for AI Agent developers and power users. With the release of the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/), the capabilities of Agents have been expanded indefinitely. This project aims to organize and classify the most practical Agent skills to help you quickly arm your AI assistant.
 
-无论你是使用 **Claude Desktop**, **Cursor**, **Windsurf** 还是 **Antigravity**，这里都能找到适合你的工具。
+Whether you use **Claude Desktop**, **Cursor**, **Windsurf**, or **Antigravity**, you can find the right tools here.
 
-## ✨ 特性 / Features
+## ✨ Features
 
-- **🧩 MCP Servers 收录**: 包含 GitHub, Filesystem, PostgreSQL 等官方及社区优质 MCP 服务。
-- **🎯 丰富的 Agent Skills**: 涵盖 TDD、系统设计、创意写作、代码审计等 Prompt 型技能。
-- **🌗 极致的 UI 体验**:
-    - **Light Mode**: "Ceramic Clean" 风格，陶瓷白背景搭配半透明磨砂质感。
-    - **Dark Mode**: 现代深色仪表盘风格，专注开发者体验。
-- **⚡️ 实时检索**: 支持按关键词、标签、来源（Anthropic, Community, OpenAI）毫秒级过滤。
-- **📱 响应式 Bento 布局**: 完美适配桌面端与移动端访问。
+- **🧩 MCP Servers Collection**: Includes official and community high-quality MCP services like GitHub, Filesystem, PostgreSQL, etc.
+- **🎯 Rich Agent Skills**: Covers Prompt-based skills such as TDD, System Design, Creative Writing, Code Audit, etc.
+- **🌗 Ultimate UI Experience**:
+    - **Light Mode**: "Ceramic Clean" style, ceramic white background with semi-transparent frosted glass texture.
+    - **Dark Mode**: Modern dark dashboard style, focused on developer experience.
+- **⚡️ Real-time Search**: Supports millisecond-level filtering by keywords, tags, and sources (Anthropic, Community, OpenAI).
+- **📱 Responsive Bento Layout**: Perfectly adapted for both desktop and mobile access.
 
-## 🛠️ 使用指南 / Usage
+## 🛠️ Usage
 
-我们为不同的开发环境准备了详细的配置教程：
+We have prepared detailed configuration tutorials for different development environments:
 
-👉 **[IDE 集成指南 (IDE Setup Guide)](./IDE_SETUP.md)**
+👉 **[IDE Setup Guide](./IDE_SETUP.md)**
 
-涵盖以下环境的配置方法：
-- **Claude Desktop** (官方客户端)
+Covers configuration methods for the following environments:
+- **Claude Desktop** (Official Client)
 - **Cursor** (AI Code Editor)
 - **Windsurf** (Cascade Engine)
-- **VS Code** (配合 Cline 插件)
+- **VS Code** (with Cline extension)
 - **Antigravity** (Google Agent)
 
-## 📦 技术栈 / Tech Stack
+## 📦 Tech Stack
 
 - **Frontend**: React 18, TypeScript, Vite
 - **Styling**: Vanilla CSS (CSS Variables, Glassmorphism)
 - **Icons**: Lucide React
 - **Deployment**: Vercel / Netlify
 
-## 🚀 本地运行 / Development
+## 🚀 Development
 
 ```bash
-# 1. 克隆项目
+# 1. Clone the project
 git clone https://github.com/7Ese/Awesome-Agent-Skills.git
 
-# 2. 进入目录
+# 2. Enter directory
 cd Awesome-Agent-Skills
 
-# 3. 安装依赖
+# 3. Install dependencies
 npm install
 
-# 4. 启动开发服务器
+# 4. Start development server
 npm run dev
 ```
 
-## 🤝 贡献 / Contributing
+## 🤝 Contributing
 
-我们非常欢迎社区贡献！如果你发现了好用的 Skill 或 MCP Server，请：
+We welcome community contributions! If you find a useful Skill or MCP Server, please:
 
-1.  **提交 Issue**: 使用我们准备好的 [Skill Submission Template](../../issues/new?template=submit-skill.yml)。
-2.  **提交 PR**:
-    - Fork 本仓库
-    - 修改 `src/data/skills.ts`
-    - 提交 Pull Request
+1.  **Submit Issue**: Use our [Skill Submission Template](../../issues/new?template=submit-skill.yml).
+2.  **Submit PR**:
+    - Fork this repository
+    - Modify `src/data/skills.ts`
+    - Submit a Pull Request
 
-### 数据结构示例
+### Data Structure Example
 
 ```typescript
 {
@@ -92,10 +92,10 @@ npm run dev
   tags: ['Tag1', 'Tag2'],
   repoUrl: 'https://github.com/username/repo',
   stars: 120,              // GitHub Stars
-  featured: false          // 是否推荐
+  featured: false          // Recommended or not
 }
 ```
 
-## 📄 许可证 / License
+## 📄 License
 
-本项目基于 [MIT License](./LICENSE) 开源。
+This project is licensed under the [MIT License](./LICENSE).
