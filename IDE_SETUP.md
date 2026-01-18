@@ -98,3 +98,37 @@ Windsurf 目前通过配置文件管理 MCP：
 **使用方法**：
 1. 复制 Skill 的核心 Prompt 内容。
 2. 粘贴到你的 IDE 项目规则文件（`.cursorrules`, `.windsurfrules`）中，或者在对话开始时直接发给 AI。
+
+---
+
+## 5. Antigravity (Google Agent)
+
+Antigravity 采用文件驱动的原生 Skills 系统，无需额外配置 Server，只需定义文档。
+
+### 目录结构
+在你的工作区目录中（例如 `~/skills-map`），Antigravity 会自动扫描包含 `SKILL.md` 的文件夹。推荐结构：
+
+```text
+skills/
+├── frontend-design/
+│   └── SKILL.md      <-- 核心指令文件
+├── mcp-builder/
+│   ├── SKILL.md
+│   └── examples/     <-- 支持附带资源文件
+└── ...
+```
+
+### SKILL.md 格式
+每个 `SKILL.md` 必须包含 YAML Frontmatter：
+
+```markdown
+---
+name: frontend-design
+description: 简要描述这个 Skill 的能力
+---
+
+详细的 Prompt 指令、规范和步骤...
+```
+
+### 使用方法
+Antigravity 会智能感知任务上下文。如果任务匹配某个 Skill 的描述，它会自动加载并遵循 **SKILL.md** 中的指令。你也可以显式要求："使用 `frontend-design` skill 帮我重构页面"。
