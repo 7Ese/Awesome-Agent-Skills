@@ -1,95 +1,101 @@
-# Skills Map
+# 🧭 Awesome Agent Skills
 
-精选 AI Agent Skills 收录导航站，涵盖 Anthropic、OpenAI、HuggingFace 官方及社区热门 skills 资源。
+<div align="center">
 
-## 技术栈
+![Awesome Agent Skills Banner](https://img.shields.io/badge/Awesome-Agent_Skills-8b5cf6?style=for-the-badge&logo=anthropic&logoColor=white)
 
-- **框架**: React + TypeScript
-- **构建**: Vite
-- **样式**: CSS (Modern Dashboard Style)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![MCP Ready](https://img.shields.io/badge/MCP-Ready-22c55e)](https://modelcontextprotocol.io/)
 
-## 本地开发
+**收录精选的 AI Agent Skills (Claude, OpenAI) 与 MCP Servers 资源导航站。**
+
+[在线预览](https://awesome-agent-skills.vercel.app/) · [提交 Skill](../../issues/new?template=submit-skill.yml) · [IDE 配置指南](./IDE_SETUP.md)
+
+</div>
+
+---
+
+## 📖 简介 / Introduction
+
+**Awesome Agent Skills** 是一个为 AI Agent 开发者和重度用户打造的技能导航站。随着 [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) 的发布，Agent 的能力边界被无限扩展。本项目旨在整理和分类最实用的 Agent 技能，帮助你快速武装你的 AI 助手。
+
+无论你是使用 **Claude Desktop**, **Cursor**, **Windsurf** 还是 **Antigravity**，这里都能找到适合你的工具。
+
+## ✨ 特性 / Features
+
+- **🧩 MCP Servers 收录**: 包含 GitHub, Filesystem, PostgreSQL 等官方及社区优质 MCP 服务。
+- **🎯 丰富的 Agent Skills**: 涵盖 TDD、系统设计、创意写作、代码审计等 Prompt 型技能。
+- **🌗 极致的 UI 体验**:
+    - **Light Mode**: "Ceramic Clean" 风格，陶瓷白背景搭配半透明磨砂质感。
+    - **Dark Mode**: 现代深色仪表盘风格，专注开发者体验。
+- **⚡️ 实时检索**: 支持按关键词、标签、来源（Anthropic, Community, OpenAI）毫秒级过滤。
+- **📱 响应式 Bento 布局**: 完美适配桌面端与移动端访问。
+
+## 🛠️ 使用指南 / Usage
+
+我们为不同的开发环境准备了详细的配置教程：
+
+👉 **[IDE 集成指南 (IDE Setup Guide)](./IDE_SETUP.md)**
+
+涵盖以下环境的配置方法：
+- **Claude Desktop** (官方客户端)
+- **Cursor** (AI Code Editor)
+- **Windsurf** (Cascade Engine)
+- **VS Code** (配合 Cline 插件)
+- **Antigravity** (Google Agent)
+
+## 📦 技术栈 / Tech Stack
+
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Vanilla CSS (CSS Variables, Glassmorphism)
+- **Icons**: Lucide React
+- **Deployment**: Vercel / Netlify
+
+## 🚀 本地运行 / Development
 
 ```bash
-# 安装依赖
+# 1. 克隆项目
+git clone https://github.com/7Ese/Awesome-Agent-Skills.git
+
+# 2. 进入目录
+cd Awesome-Agent-Skills
+
+# 3. 安装依赖
 npm install
 
-# 启动开发服务器
+# 4. 启动开发服务器
 npm run dev
-
-# 构建生产版本
-npm run build
 ```
 
-## 使用指南
+## 🤝 贡献 / Contributing
 
-👉 **[如何配制到 IDE? 查看详细教程](./IDE_SETUP.md)** 
-(支持 Claude Desktop, Cursor, Windsurf, VS Code)
+我们非常欢迎社区贡献！如果你发现了好用的 Skill 或 MCP Server，请：
 
-## 投稿 Skill
+1.  **提交 Issue**: 使用我们准备好的 [Skill Submission Template](../../issues/new?template=submit-skill.yml)。
+2.  **提交 PR**:
+    - Fork 本仓库
+    - 修改 `src/data/skills.ts`
+    - 提交 Pull Request
 
-欢迎投稿！请通过 [GitHub Issue](../../issues/new?template=submit-skill.yml) 提交你发现的优质 AI Agent Skill。
-
-### 投稿要求
-
-- 必须是有效的 AI Agent Skill（符合 Agent Skills 规范）
-- 提供 GitHub 仓库链接
-- 简要描述 Skill 的功能和用途
-
-## 目录结构
-
-```
-skills-map/
-├── src/
-│   ├── App.tsx          # 主应用组件
-│   ├── App.css          # 样式文件
-│   ├── main.tsx         # 入口文件
-│   ├── types/           # TypeScript 类型
-│   └── data/
-│       └── skills.ts    # Skills 数据
-├── .github/
-│   └── ISSUE_TEMPLATE/
-│       └── submit-skill.yml  # 投稿模板
-├── index.html
-├── package.json
-└── vite.config.ts
-```
-
-## 维护指南
-
-### 添加新 Skill
-
-1. 收到投稿 Issue 后审核
-2. 编辑 `src/data/skills.ts`，添加新条目：
+### 数据结构示例
 
 ```typescript
 {
-  id: 'unique-id',
-  name: 'Skill 名称',
-  description: '简要描述',
-  category: 'development', // 见 types/index.ts
-  source: 'community',     // anthropic/openai/huggingface/community
+  id: 'skill-id',
+  name: 'Skill Name',
+  description: 'A brief description of what this skill does.',
+  category: 'development', // development | research | data | creative ...
+  source: 'community',     // anthropic | openai | huggingface | community
   tags: ['Tag1', 'Tag2'],
-  repoUrl: 'https://github.com/...',
-  stars: 100,              // 可选
-  featured: false,         // 是否推荐
+  repoUrl: 'https://github.com/username/repo',
+  stars: 120,              // GitHub Stars
+  featured: false          // 是否推荐
 }
 ```
 
-3. 提交并推送：
+## 📄 许可证 / License
 
-```bash
-git add .
-git commit -m "feat: add [Skill Name]"
-git push
-```
-
-4. 关闭对应 Issue 并回复感谢
-
-## 部署
-
-推荐使用 Vercel 或 Netlify 进行自动部署，连接 GitHub 仓库后每次 push 自动更新。
-
-## License
-
-MIT
+本项目基于 [MIT License](./LICENSE) 开源。
