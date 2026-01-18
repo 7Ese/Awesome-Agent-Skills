@@ -1,0 +1,89 @@
+name: "\U0001F4E5 投稿 Skill"
+description: 提交一个新的 AI Agent Skill 到导航站
+title: "[投稿] "
+labels: ["submission", "pending"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你的投稿！请填写以下信息，我们会尽快审核。
+        
+  - type: input
+    id: name
+    attributes:
+      label: Skill 名称
+      description: 这个 Skill 的名称
+      placeholder: 例如：MCP Builder
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: 简介
+      description: 一句话描述这个 Skill 的功能（中文）
+      placeholder: 创建高质量MCP服务器的开发指南，支持TypeScript和Python。
+    validations:
+      required: true
+      
+  - type: input
+    id: repo_url
+    attributes:
+      label: GitHub 仓库链接
+      description: Skill 的 GitHub 仓库地址
+      placeholder: https://github.com/username/repo
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: source
+    attributes:
+      label: 来源
+      description: 这个 Skill 的来源/提供者
+      options:
+        - community（社区）
+        - anthropic（Anthropic官方）
+        - openai（OpenAI官方）
+        - huggingface（HuggingFace官方）
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: category
+    attributes:
+      label: 分类
+      description: 选择最合适的分类
+      options:
+        - development（开发工具）
+        - document（文档处理）
+        - data（数据分析）
+        - integration（集成自动化）
+        - creative（创意设计）
+        - security（安全系统）
+        - collaboration（协作管理）
+        - research（高级研究）
+    validations:
+      required: true
+      
+  - type: input
+    id: tags
+    attributes:
+      label: 标签
+      description: 用于搜索的关键词，用逗号分隔
+      placeholder: MCP, TypeScript, API, Server
+    validations:
+      required: true
+      
+  - type: input
+    id: stars
+    attributes:
+      label: GitHub Stars（可选）
+      description: 当前的 Star 数量
+      placeholder: 156
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 补充说明（可选）
+      description: 其他你想补充的信息
+      placeholder: 例如：这是我开发的工具，已经有 XXX 用户在使用...
