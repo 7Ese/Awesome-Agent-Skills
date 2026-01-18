@@ -21,6 +21,11 @@ npm run dev
 npm run build
 ```
 
+## 使用指南
+
+👉 **[如何配制到 IDE? 查看详细教程](./IDE_SETUP.md)** 
+(支持 Claude Desktop, Cursor, Windsurf, VS Code)
+
 ## 投稿 Skill
 
 欢迎投稿！请通过 [GitHub Issue](../../issues/new?template=submit-skill.yml) 提交你发现的优质 AI Agent Skill。
