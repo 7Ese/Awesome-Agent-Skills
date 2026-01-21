@@ -347,6 +347,27 @@ body::after {
 
 .sidebar-list {
   list-style: none;
+  max-height: 320px;
+  overflow-y: auto;
+  padding-right: var(--space-1);
+}
+
+/* 自定义滚动条样式 */
+.sidebar-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-list::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: 4px;
+}
+
+.sidebar-list::-webkit-scrollbar-thumb:hover {
+  background: var(--border-hover);
 }
 
 .sidebar-item {
