@@ -1371,6 +1371,16 @@ export const skills: Skill[] = [
         docsUrl: 'https://github.com/topics/sales',
         stars: 0,
     }
+    {
+        id: 'symcli-math',
+        name: 'SymCLI',
+        description: 'A deterministic symbolic computation engine and C# code analyzer for exact math verification.',
+        category: 'development',
+        source: 'community',
+        tags: ['Math', 'Code Analysis', 'C#', 'Symbolic Computation'],
+        repoUrl: 'https://github.com/Wowo51/Sym',
+        stars: 0,
+    },
 ];
 
 export const getSkillsBySource = (source: string) =>
