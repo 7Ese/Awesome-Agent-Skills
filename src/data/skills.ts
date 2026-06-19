@@ -786,6 +786,17 @@ export const skills: Skill[] = [
         stars: 320,
     },
     {
+        id: 'notfair-marketing-skills',
+        name: 'NotFair Marketing Skills',
+        description: 'Claude Code skills for SEO, Google Ads, and Meta Ads, connecting to live data via Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP.',
+        category: 'integration',
+        source: 'community',
+        tags: ['SEO', 'Google Ads', 'Meta Ads', 'MCP', 'Marketing'],
+        repoUrl: 'https://github.com/nowork-studio/NotFair',
+        stars: 2924,
+        featured: true,
+    },
+    {
         id: 'hf-training-skills',
         name: 'HuggingFace Training',
         description: '使用 Skill 在 HuggingFace 训练大模型。',
