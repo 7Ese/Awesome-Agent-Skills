@@ -223,6 +223,16 @@ export const skills: Skill[] = [
         repoUrl: 'https://github.com/frmoretto/stream-coding',
         stars: 34,
     },
+    {
+        id: 'community-ax-extract-workflow',
+        name: 'ax-extract-workflow',
+        description: '从本地 ax 会话、提交和技能记录中复盘已交付的编码 Agent 工作流。',
+        category: 'development',
+        source: 'community',
+        tags: ['Workflow', 'Observability', 'Agent'],
+        repoUrl: 'https://github.com/Necmttn/ax/tree/main/skills/ax-extract-workflow',
+        stars: 33,
+    },
 
     // ============ Community Skills - Document ============
     {
