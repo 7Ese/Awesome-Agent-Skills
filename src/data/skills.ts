@@ -280,6 +280,16 @@ export const skills: Skill[] = [
         repoUrl: 'https://github.com/fabioc-aloha/spotify-skill',
         stars: 123,
     },
+    {
+        id: 'community-runapi-cli',
+        name: 'RunAPI CLI Skill',
+        description: '通过 RunAPI CLI 执行 AI 图片、视频、音乐/音频和其他模型 API 任务。',
+        category: 'creative',
+        source: 'community',
+        tags: ['RunAPI', 'CLI', 'Image', 'Video', 'Music', 'API'],
+        repoUrl: 'https://github.com/runapi-ai/cli-skill',
+        stars: 2,
+    },
 
     // ============ Community Skills - Security ============
     {
