@@ -280,6 +280,16 @@ export const skills: Skill[] = [
         repoUrl: 'https://github.com/fabioc-aloha/spotify-skill',
         stars: 123,
     },
+    {
+        id: 'community-hermes-tweet',
+        name: 'Hermes Tweet',
+        description: 'Hermes Agent 的 X/Twitter 社交监听、趋势监控和审批式发布插件。',
+        category: 'integration',
+        source: 'community',
+        tags: ['Hermes', 'X/Twitter', 'Social'],
+        repoUrl: 'https://github.com/Xquik-dev/hermes-tweet',
+        stars: 21,
+    },
 
     // ============ Community Skills - Security ============
     {
@@ -1384,7 +1394,9 @@ export const getSkillsByCategory = (category: string) =>
         : skills.filter(s => s.category === category);
 
 export const searchSkills = (query: string) => {
-    const lowerQuery = query.toLowerCase();
+    const lowerQuery = query.trim().toLowerCase();
+    if (!lowerQuery) return skills;
+
     return skills.filter(s =>
         s.name.toLowerCase().includes(lowerQuery) ||
         s.description.toLowerCase().includes(lowerQuery) ||
