@@ -1312,6 +1312,15 @@ export const skills: Skill[] = [
         stars: 5000,
     },
     {
+        id: 'orkas-video-studio',
+        name: 'OrkasVideoStudio Skills',
+        description: '面向 Codex 和 Claude Code 的 14 个视频制作 Skills，配套本地 CLI、MCP 和可编辑时间线。',
+        category: 'creative',
+        source: 'community',
+        tags: ['Video', 'Agent Skills', 'MCP', 'Codex', 'Claude Code'],
+        repoUrl: 'https://github.com/Orkas-AI/Orkas-VideoStudio/tree/main/packages/skills',
+    },
+    {
         id: 'digital-marketing-ai',
         name: 'Digital Marketing + AI Tools',
         description: 'SEO/社交+AI自动化。',
