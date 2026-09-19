@@ -1,6 +1,17 @@
 import { Skill } from '../types';
 
 export const skills: Skill[] = [
+    {
+        id: 'hyperconsciousness',
+        name: 'Hyperconsciousness',
+        description: '开发者 Alpha 阶段的加密知识存储，通过有范围和有效期限制的授权提供 MCP 搜索与读取。',
+        category: 'data',
+        source: 'community',
+        tags: ['MCP', 'Memory', 'Privacy', 'Rust'],
+        repoUrl: 'https://github.com/louis030195/hyperconsciousness',
+        stars: 1,
+        featured: false,
+    },
     // ============ Anthropic Official Skills ============
     {
         id: 'anthropic-frontend-design',
