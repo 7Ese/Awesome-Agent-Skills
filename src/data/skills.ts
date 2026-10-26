@@ -224,6 +224,16 @@ export const skills: Skill[] = [
         stars: 34,
     },
 
+    {
+        id: 'agent-qa',
+        name: 'agent-qa',
+        description: '面向 Web、Android 和 iOS 应用测试的 Skills 与 MCP 工具，支持测试编写、结果分析、持久记忆和验证后的自我改进。',
+        category: 'development',
+        source: 'community',
+        tags: ['Testing', 'MCP', 'Skills', 'Memory'],
+        docsUrl: 'https://vostride.com/docs/agent-qa/skills',
+    },
+
     // ============ Community Skills - Document ============
     {
         id: 'community-epub',
