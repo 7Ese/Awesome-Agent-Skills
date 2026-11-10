@@ -1381,16 +1381,6 @@ export const skills: Skill[] = [
         repoUrl: 'https://github.com/korey2028-prog/resume-claim-guard',
         stars: 0,
     }
-
-
-
-
-
-
-
-
-
-
 ];
 
 export const getSkillsBySource = (source: string) =>
