@@ -1370,6 +1370,16 @@ export const skills: Skill[] = [
         tags: ['Sales', 'Persuasion', 'Business'],
         docsUrl: 'https://github.com/topics/sales',
         stars: 0,
+    },
+    {
+        id: 'resume-claim-guard',
+        name: 'Resume Claim Guard',
+        description: '从岗位 JD 出发，先反问并锁定真实经历，再写定向简历；阻止 AI 编造数字或拔高动词，并预演面试追问。MIT 开源 Agent Skill。',
+        category: 'productivity',
+        source: 'community',
+        tags: ['Resume', 'Career', 'Writing'],
+        repoUrl: 'https://github.com/korey2028-prog/resume-claim-guard',
+        stars: 0,
     }
 ];
 
